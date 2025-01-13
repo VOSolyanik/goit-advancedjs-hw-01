@@ -16,6 +16,10 @@
   -webkit-text-size-adjust: 100%;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -29,4 +33,8 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+.hidden {
+  display: none !important;
 }

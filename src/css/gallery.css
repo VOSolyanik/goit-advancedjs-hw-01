@@ -1,0 +1,28 @@
+
+.gallery {
+  padding: 0 36px;
+	display: grid;
+	gap: 24px;
+	grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+}
+
+.gallery-link {
+	display: block;
+}
+
+.gallery-image {
+  transition: transform 0.3s;
+}
+
+.gallery-link:hover .gallery-image {
+	transform: scale(1.04);
+}
+
+.sl-overlay {
+  background-color: #2E2F42CC;
+}
+.sl-wrapper .sl-close,
+.sl-wrapper .sl-counter,
+.sl-wrapper .sl-navigation button {
+  color: #fff;
+}

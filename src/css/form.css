@@ -1,0 +1,51 @@
+.feedback-form {
+  max-width: 408px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.feedback-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #2e2f42;
+  letter-spacing: 0.04em;
+}
+
+.feedback-form label + label{
+  margin-top: 8px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  margin-top: 8px;
+  padding: 8px 16px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.feedback-form input:hover,
+.feedback-form textarea:hover {
+  border-color: #000;
+}
+
+.feedback-form button {
+  margin-top: 16px;
+  padding: 8px 16px;
+  background-color: #4e75ff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #fff;
+  letter-spacing: 0.04em;
+}

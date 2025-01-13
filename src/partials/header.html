@@ -1,17 +1,15 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
+      <div class="{=$back-class}">
+        <load src="partials/back-link.html" />
+      </div>
+      <ul class="nav-list {=$nav-class}">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link {=$highlight-gallery}" href="./1-gallery.html">Gallery page</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link {=$highlight-form}" href="./2-form.html">Form page</a>
         </li>
       </ul>
     </nav>
