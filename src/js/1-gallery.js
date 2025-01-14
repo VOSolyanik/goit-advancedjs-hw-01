@@ -21,23 +21,6 @@ function renderGallery(images) {
     .join("");
 }
 
-const generateGalleryMarkup = images => {
-  return images.reduce((acc, { original, preview, description }) => {
-    return (
-      acc +
-      `<li class="gallery-item">
-        <a class="gallery-link" href="${original}">
-        <img
-          class="gallery-image"
-          src="${preview}"
-          alt="${description}"
-        />
-        </a>
-      </li>`
-    );
-  }, '');
-};
-
 const galleryContainer = document.querySelector('.gallery');
 galleryContainer.innerHTML = renderGallery(galleryData);
 
